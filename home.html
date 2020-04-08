@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gofer.com</title>
+	<!--
+	[if lt IE 9]
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![enfif]
+	-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+<body>
+<div class="container">
+<header>
+	<nav>
+		<ul>
+			<li><a href="/index.html">Home</a></li>
+			<li><a href="/features.html">Features</li>
+			<li><a href="/about.html">About</a></li>
+			<li><a href="/contact.html">Contact_us</a></li>
+		</ul>
+	</nav>
+	<img src="/images/gofer.png" width="250" height="180"/>
+	<h1 align="center">Home</h1>
+</header>
+<section id="main" >
+	<p> This is <em>Homepage </em>of
+		<strong>Gofer.com</strong></p>
+<div class="login-form" class="boxed">
+<form action="/api/login" method="POST" align='center' id="loginForm">
+<label for="username">Username : </label>
+<input type="text" name="username" id="username"><br><br>
+<label for="password">Password : </label>
+<input type="password" name="password" id="password"><br><br>
+<input type="checkbox" name="remember" id="remember">
+<label for="remember">Remember me</label><br>
+<br>
+<div id="errorMsg"></div>
+<br>
+<input type="submit" name="loginbtn" value="Login">
+<input type="Reset" name="cancelbtn" value="Cancel">
+   </form>
+<div id="logoutSection" >
+	<p>You are logged in!</p>
+	<button id="logoutButton">Logout</button>
+</div>
+</div>
+
+<div id="results" class="boxed">
+	<button id="togglebutton">Hide</button>
+<div id="resultList">
+	Here we will display the contents
+</div>
+
+</section>
+<footer >
+	<p align="center">&copy; 2020 Gofer.com</p>
+</footer>
+</div>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
+
